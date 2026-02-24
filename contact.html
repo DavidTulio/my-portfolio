@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Contact — David John Emmanuel G. Tulio</title>
+  <meta name="description" content="Get in touch with David John Emmanuel G. Tulio for internship, freelance, or collaboration opportunities." />
+  <meta name="author" content="David John Emmanuel G. Tulio" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact — David John Emmanuel G. Tulio" />
+  <meta property="og:description" content="Reach out for internships, projects, or collaborations." />
+  <meta property="og:type" content="website" />
+
+  <!-- Theme pre-load -->
+  <script>
+    (function () {
+      var saved = localStorage.getItem('portfolio-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', saved || (prefersDark ? 'dark' : 'light'));
+    })();
+  </script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/nav.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <link rel="stylesheet" href="assets/css/pages/contact.css" />
+</head>
+
+<body class="page-enter">
+
+  <!-- NAVIGATION -->
+  <header role="banner">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="container navbar__inner">
+        <a href="index.html" class="navbar__logo" aria-label="David Tulio — Home">
+          <img src="assets/images/logo-light.png" alt="DT Logo" class="navbar__logo-img logo-img" width="38" height="38" />
+          <span class="navbar__logo-name">David Tulio<span>Web Developer</span></span>
+        </a>
+        <ul class="navbar__links" role="list">
+          <li><a href="index.html"    class="navbar__link">Home</a></li>
+          <li><a href="about.html"    class="navbar__link">About</a></li>
+          <li><a href="projects.html" class="navbar__link">Projects</a></li>
+          <li><a href="blog.html"     class="navbar__link">Blog</a></li>
+          <li><a href="contact.html"  class="navbar__link" aria-current="page">Contact</a></li>
+        </ul>
+        <div class="navbar__controls">
+          <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark/light mode">
+            <span class="icon-moon" aria-hidden="true">☽</span>
+            <span class="icon-sun"  aria-hidden="true">☀</span>
+          </button>
+          <button class="navbar__hamburger" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <nav id="mobile-menu" class="navbar__mobile-menu" aria-label="Mobile navigation">
+      <a href="index.html"    class="navbar__mobile-link">Home</a>
+      <a href="about.html"    class="navbar__mobile-link">About</a>
+      <a href="projects.html" class="navbar__mobile-link">Projects</a>
+      <a href="blog.html"     class="navbar__mobile-link">Blog</a>
+      <a href="contact.html"  class="navbar__mobile-link" aria-current="page">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ════════════════════════════════════
+         CONTACT HERO
+    ════════════════════════════════════ -->
+    <section class="contact-hero" aria-label="Contact introduction">
+      <div class="container">
+        <p class="section-label">Get In Touch</p>
+        <h1 class="contact-hero__title">
+          Let's build<br /><em>something</em><br />great.
+        </h1>
+        <!--
+        EDIT: Change the subtitle below if you want a different message
+        -->
+        <p class="contact-hero__sub" style="margin-top: 1.5rem;">
+          Whether you have an internship opportunity, a project idea,
+          or just want to connect — feel free to reach out!
+        </p>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+         CONTACT BODY
+    ════════════════════════════════════ -->
+    <section class="section" aria-label="Contact details and form">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- ── Info Column (left) ── -->
+          <div class="contact-info reveal">
+
+            <!--
+            ═══════════════════════════════════════════════════
+            EDIT: Contact details
+            Change the email, phone, and other info below.
+            ═══════════════════════════════════════════════════
+            -->
+
+            <!-- EMAIL -->
+            <div class="contact-info__item">
+              <p class="contact-info__label">Email</p>
+              <p class="contact-info__value">
+                <!-- EDIT: Change email address here (in both href and the visible text) -->
+                <a href="mailto:davidjohne.tulio@gmail.com">
+                  davidjohne.tulio@gmail.com
+                </a>
+              </p>
+            </div>
+
+            <!-- PHONE -->
+            <div class="contact-info__item">
+              <p class="contact-info__label">Phone</p>
+              <p class="contact-info__value">
+                <!-- EDIT: Change phone number (in both href and visible text) -->
+                <a href="tel:+639926076195">09926076195</a>
+              </p>
+            </div>
+
+            <!-- RESPONSE TIME -->
+            <div class="contact-info__item">
+              <p class="contact-info__label">Response Time</p>
+              <!-- EDIT: Change if you respond at a different speed -->
+              <p class="contact-info__value" style="font-size: var(--text-base);">Within 24–48 hours</p>
+            </div>
+
+            <!-- AVAILABILITY -->
+            <div class="contact-info__item">
+              <p class="contact-info__label">Availability</p>
+              <!-- EDIT: Update your availability status -->
+              <p class="contact-info__value" style="font-size: var(--text-base); font-weight: 500;">
+                Open to internship &amp; freelance opportunities
+              </p>
+            </div>
+
+            <!-- LOCATION -->
+            <div class="contact-map">
+              <span class="contact-map__pin" aria-hidden="true">📍</span>
+              <div class="contact-map__text">
+                <!-- EDIT: Update your location -->
+                <div class="contact-map__city">Sindalan, City of San Fernando, Pampanga</div>
+                <div class="contact-map__country">Philippines · Available for remote work</div>
+              </div>
+            </div>
+
+            <!-- ── Social Links ── -->
+            <div style="margin-top: var(--space-10);">
+              <p class="section-label" style="margin-bottom: var(--space-5);">Find Me Online</p>
+              <div class="social-links">
+
+                <!-- GitHub — Real link -->
+                <a href="https://github.com/DavidTulio" class="social-link" target="_blank" rel="noopener" aria-label="GitHub profile">
+                  <span class="social-link__icon" aria-hidden="true">⌥</span>
+                  GitHub
+                </a>
+
+                <!-- LinkedIn — Real link -->
+                <a href="https://www.linkedin.com/in/david-john-tulio-126916316/" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+                  <span class="social-link__icon" aria-hidden="true">in</span>
+                  LinkedIn
+                </a>
+
+                <!-- PLACEHOLDER: Add your Twitter/X if you have one, else delete this block -->
+                <a href="#" class="social-link" target="_blank" rel="noopener" aria-label="Twitter/X profile">
+                  <span class="social-link__icon" aria-hidden="true">𝕏</span>
+                  Twitter
+                </a>
+
+                <!-- PLACEHOLDER: Add Facebook if you want to include it -->
+                <a href="https://www.facebook.com/Djtulio0804" class="social-link" target="_blank" rel="noopener" aria-label="Facebook profile">
+                  <span class="social-link__icon" aria-hidden="true">f</span>
+                  Facebook
+                </a>
+
+              </div>
+            </div>
+
+          </div><!-- /contact-info -->
+
+          <!-- ── Form Column (right) ── -->
+          <div class="reveal reveal-delay-2">
+            <div class="contact-form-wrap">
+              <h2 class="contact-form-wrap__title">Send a Message</h2>
+              <p class="contact-form-wrap__sub">
+                Fill in the form and I'll get back to you as soon as possible.
+              </p>
+
+              <!--
+              NOTE ABOUT THE FORM:
+              This form currently shows a success message when submitted (simulated).
+              To make it actually send emails, connect it to a free service like:
+                • Formspree  → formspree.io  (free, just change the action URL)
+                • EmailJS    → emailjs.com   (free tier, add their JS code)
+              Ask me to help set that up when you're ready to deploy!
+              -->
+              <form class="contact-form" id="contact-form" aria-label="Contact form" novalidate>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label class="form-label" for="name">Full Name *</label>
+                    <input
+                      type="text" id="name" name="name"
+                      class="form-input"
+                      placeholder="Juan dela Cruz"
+                      required autocomplete="name"
+                      aria-required="true"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="email">Email Address *</label>
+                    <input
+                      type="email" id="email" name="email"
+                      class="form-input"
+                      placeholder="juan@example.com"
+                      required autocomplete="email"
+                      aria-required="true"
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="subject">Subject</label>
+                  <input
+                    type="text" id="subject" name="subject"
+                    class="form-input"
+                    placeholder="Internship Inquiry / Project Collaboration"
+                    autocomplete="off"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="message">Message *</label>
+                  <textarea
+                    id="message" name="message"
+                    class="form-textarea"
+                    placeholder="Tell me about the opportunity, project, or just say hello!"
+                    required
+                    aria-required="true"
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn--primary form-submit" aria-label="Send message">
+                  Send Message →
+                </button>
+
+              </form>
+
+              <!-- Success state shown after form submit -->
+              <div class="form-success" role="status" aria-live="polite">
+                <span class="form-success__icon" aria-hidden="true">✓</span>
+                <h3 class="form-success__title">Message Sent!</h3>
+                <p class="form-success__msg">
+                  Thanks for reaching out! I'll get back to you within 24–48 hours.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="assets/images/logo-light.png" alt="DT Logo" class="footer__logo-img" width="40" height="40" />
+            <span class="footer__name">David Tulio</span>
+          </div>
+          <p class="footer__tagline">Turning ideas into functional and modern digital solutions.</p>
+          <p class="footer__email">
+            <a href="mailto:davidjohne.tulio@gmail.com">davidjohne.tulio@gmail.com</a>
+          </p>
+        </div>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 David John Emmanuel G. Tulio. All rights reserved.</p>
+        <div class="footer__social" aria-label="Social media links">
+          <a href="https://github.com/DavidTulio" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+          <a href="https://www.linkedin.com/in/david-john-tulio-126916316/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          <!-- PLACEHOLDER: Add Twitter link or delete -->
+          <a href="#" target="_blank" rel="noopener" aria-label="Twitter">𝕏</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/animations.js"></script>
+
+</body>
+</html>

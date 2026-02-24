@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>David John Emmanuel G. Tulio — Web Developer</title>
+  <meta name="description" content="Portfolio of David John Emmanuel G. Tulio, a web developer turning ideas into functional and modern digital solutions." />
+  <meta name="keywords" content="web developer, portfolio, HTML, CSS, JavaScript, Vue.js, Philippines" />
+  <meta name="author" content="David John Emmanuel G. Tulio" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="David John Emmanuel G. Tulio — Web Developer" />
+  <meta property="og:description" content="Turning ideas into functional and modern digital solutions." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/images/logo-light.png" />
+
+  <!-- Theme pre-load (prevents flash on reload) -->
+  <script>
+    (function () {
+      var saved = localStorage.getItem('portfolio-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', saved || (prefersDark ? 'dark' : 'light'));
+    })();
+  </script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/nav.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <link rel="stylesheet" href="assets/css/pages/home.css" />
+</head>
+
+<body class="page-enter">
+
+  <!-- ════════════════════════════════════
+       NAVIGATION
+  ════════════════════════════════════ -->
+  <header role="banner">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="container navbar__inner">
+
+        <a href="index.html" class="navbar__logo" aria-label="David Tulio — Home">
+          <img src="assets/images/logo-light.png" alt="DT Logo" class="navbar__logo-img logo-img" width="38" height="38" />
+          <span class="navbar__logo-name">
+            David Tulio
+            <span>Web Developer</span>
+          </span>
+        </a>
+
+        <ul class="navbar__links" role="list">
+          <li><a href="index.html"    class="navbar__link" aria-current="page">Home</a></li>
+          <li><a href="about.html"    class="navbar__link">About</a></li>
+          <li><a href="projects.html" class="navbar__link">Projects</a></li>
+          <li><a href="blog.html"     class="navbar__link">Blog</a></li>
+          <li><a href="contact.html"  class="navbar__link">Contact</a></li>
+        </ul>
+
+        <div class="navbar__controls">
+          <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark/light mode">
+            <span class="icon-moon" aria-hidden="true">☽</span>
+            <span class="icon-sun"  aria-hidden="true">☀</span>
+          </button>
+          <button class="navbar__hamburger" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+
+      </div>
+    </nav>
+
+    <nav id="mobile-menu" class="navbar__mobile-menu" aria-label="Mobile navigation">
+      <a href="index.html"    class="navbar__mobile-link" aria-current="page">Home</a>
+      <a href="about.html"    class="navbar__mobile-link">About</a>
+      <a href="projects.html" class="navbar__mobile-link">Projects</a>
+      <a href="blog.html"     class="navbar__mobile-link">Blog</a>
+      <a href="contact.html"  class="navbar__mobile-link">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ════════════════════════════════════
+         HERO SECTION
+    ════════════════════════════════════ -->
+    <section class="hero" aria-label="Introduction">
+
+      <img src="assets/images/logo-light.png" alt="" class="hero__watermark" aria-hidden="true" role="presentation" />
+
+      <div class="container hero__content">
+        <div class="hero__grid">
+
+          <!-- Left: Headline + Tagline -->
+          <div class="hero__left">
+
+            <p class="hero__eyebrow">Web Developer &amp; IT Student</p>
+
+            <h1 class="hero__headline">
+              David<br /><em>John</em><br />Tulio.
+            </h1>
+
+            <!--
+            ═══════════════════════════════════════════
+            EDIT: Tagline — change the sentence below
+            ═══════════════════════════════════════════
+            -->
+            <p class="hero__tagline">
+              Turning ideas into functional and modern digital solutions.
+            </p>
+
+            <div class="hero__cta">
+              <a href="projects.html" class="btn btn--primary">View Projects <span aria-hidden="true">→</span></a>
+              <a href="contact.html"  class="btn btn--ghost">Get in Touch</a>
+            </div>
+
+          </div>
+
+          <!-- Right: Stats -->
+          <div class="hero__right">
+            <div class="hero__stats">
+
+              <!--
+              ═══════════════════════════════════════════════════════════════
+              PLACEHOLDER STATS
+              To edit a stat:
+                • Change the number/text inside <div class="stat-card__num">
+                • Change the label inside <div class="stat-card__label">
+              ═══════════════════════════════════════════════════════════════
+              -->
+
+              <!-- STAT 1 ─ Edit number and label here -->
+              <div class="stat-card">
+                <div class="stat-card__num">3+</div>
+                <div class="stat-card__label">Years of Web Dev Study</div>
+              </div>
+
+              <!-- STAT 2 ─ Edit number and label here -->
+              <div class="stat-card">
+                <div class="stat-card__num">5+</div>
+                <div class="stat-card__label">Completed Projects</div>
+              </div>
+
+              <!-- STAT 3 ─ PLACEHOLDER: fill in your own number and label -->
+              <div class="stat-card">
+                <div class="stat-card__num">4</div>
+                <div class="stat-card__label">Certifications</div>
+              </div>
+
+              <!-- STAT 4 ─ PLACEHOLDER: fill in your own number and label -->
+              <div class="stat-card">
+                <div class="stat-card__num">2027</div>
+                <div class="stat-card__label">Expected Graduation</div>
+              </div>
+
+            </div>
+
+            <!--
+            EDIT: Change the availability text if needed
+            -->
+            <div class="hero__availability" role="status" aria-live="polite">
+              <span class="availability-dot" aria-hidden="true"></span>
+              Open to internship &amp; freelance opportunities
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <div class="hero__scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+
+    </section>
+
+    <!-- ════════════════════════════════════
+         FEATURED PROJECTS
+    ════════════════════════════════════ -->
+    <section class="featured-projects section" aria-labelledby="feat-heading">
+      <div class="container">
+
+        <div class="featured-projects__header">
+          <div>
+            <p class="section-label">Selected Work</p>
+            <h2 class="section-title" id="feat-heading">Featured<br />Projects.</h2>
+          </div>
+          <a href="projects.html" class="btn btn--ghost reveal">All Projects →</a>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- ─────────────────────────────────────────
+               PROJECT CARD 1: Dropify
+          ───────────────────────────────────────── -->
+          <article class="project-card reveal" data-category="web">
+            <div class="project-card__thumb project-card__thumb--1" aria-hidden="true">
+              <div class="project-card__thumb-inner">
+                <img src="assets/images/home-dropify.png" alt="Home Page" class="project-full__screenshot" />
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="tag">Node.js</span>
+                <span class="tag">MongoDB</span>
+                <span class="tag">Figma</span>
+              </div>
+              <h3 class="project-card__title">Dropify</h3>
+              <p class="project-card__desc">
+                A web-based e-commerce platform for local influencers with a functional
+                backend system, structured product pages, and a user-friendly interface.
+              </p>
+              <div class="project-card__links">
+                <!-- PLACEHOLDER: Replace # with your Dropify live demo link -->
+                <a href="https://dropifystore.netlify.app/" class="project-card__link" target="_blank" rel="noopener">
+                  <span aria-hidden="true">↗</span> Live Demo
+                </a>
+                <!-- PLACEHOLDER: Replace # with your Dropify GitHub repo link -->
+                <a href="https://github.com/jarenkendrick14/6WCSERVER-WD303-Dropify" class="project-card__link" target="_blank" rel="noopener">
+                  <span aria-hidden="true">⌥</span> GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ─────────────────────────────────────────
+               PROJECT CARD 2: 4B Betis Furniture
+          ───────────────────────────────────────── -->
+          <article class="project-card reveal reveal-delay-2" data-category="web">
+            <div class="project-card__thumb project-card__thumb--2" aria-hidden="true">
+              <div class="project-card__thumb-inner">
+                <img src="assets/images/4b-home.PNG" alt="Home Page" class="project-full__screenshot" />
+              </div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <span class="tag">Figma</span>
+                <span class="tag">WordPress</span>
+              </div>
+              <h3 class="project-card__title">4B Betis Furniture</h3>
+              <p class="project-card__desc">
+                A marketing website for a local furniture shop showcasing their services
+                and products with layouts designed to highlight brand identity.
+              </p>
+              <div class="project-card__links">
+                <!-- PLACEHOLDER: Replace # with your 4B Betis Furniture live link -->
+                <a href="https://4bbetisfurniture.com" class="project-card__link" target="_blank" rel="noopener">
+                  <span aria-hidden="true">↗</span> Live Demo
+                </a>
+                <!-- PLACEHOLDER: Replace # with your GitHub repo link -->
+                <a href="#" class="project-card__link" target="_blank" rel="noopener">
+                  <span aria-hidden="true">⌥</span> GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ─────────────────────────────────────────
+               PROJECT CARD 3: PLACEHOLDER
+               Add your 3rd project here when ready
+          ───────────────────────────────────────── -->
+          <article class="project-card reveal reveal-delay-3" data-category="web">
+            <div class="project-card__thumb project-card__thumb--3" aria-hidden="true">
+              <div class="project-card__thumb-inner">03</div>
+            </div>
+            <div class="project-card__body">
+              <div class="project-card__tags">
+                <!-- PLACEHOLDER: Add tags e.g. <span class="tag">React</span> -->
+                <span class="tag">Coming Soon</span>
+              </div>
+              <!-- PLACEHOLDER: Replace with your project name -->
+              <h3 class="project-card__title">Your Next Project</h3>
+              <!-- PLACEHOLDER: Replace with your project description -->
+              <p class="project-card__desc">
+                Coming Soon!
+              </p>
+              <div class="project-card__links">
+                <!-- PLACEHOLDER: Replace # with live demo link -->
+                <a href="#" class="project-card__link" target="_blank" rel="noopener">
+                  <span aria-hidden="true">↗</span> Live Demo
+                </a>
+                <!-- PLACEHOLDER: Replace # with GitHub link -->
+                <a href="#" class="project-card__link" target="_blank" rel="noopener">
+                  <span aria-hidden="true">⌥</span> GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+    <!-- ════════════════════════════════════
+         TESTIMONIALS
+    ════════════════════════════════════ -->
+    <section class="testimonials section section--alt" aria-labelledby="test-heading">
+      <div class="container">
+        <p class="section-label reveal">What People Say</p>
+        <h2 class="section-title reveal" id="test-heading">Testimonials.</h2>
+
+        <div class="testimonials__grid" style="margin-top: 3rem;">
+
+          <!--
+          ═══════════════════════════════════════════════════════════════════
+          PLACEHOLDER TESTIMONIALS
+          For each card:
+            1. Replace the quote text inside <blockquote>
+            2. Replace the 2-letter initials in <div class="testimonial-card__avatar">
+            3. Replace the name in <div class="testimonial-card__name">
+            4. Replace the role in <div class="testimonial-card__role">
+          Ask classmates, professors, or clients for short quotes!
+          ═══════════════════════════════════════════════════════════════════
+          -->
+
+          <!-- TESTIMONIAL 1 -->
+          <article class="testimonial-card reveal">
+            <blockquote class="testimonial-card__quote">
+              Coming Soon!
+              Coming Soon!
+            </blockquote>
+            <footer class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">AB</div><!-- Change initials -->
+              <div>
+                <div class="testimonial-card__name">Person Full Name</div><!-- Change name -->
+                <div class="testimonial-card__role">Their Title or Role</div><!-- Change role -->
+              </div>
+            </footer>
+          </article>
+
+          <!-- TESTIMONIAL 2 -->
+          <article class="testimonial-card reveal reveal-delay-2">
+            <blockquote class="testimonial-card__quote">
+              Coming Soon!
+              Coming Soon!
+            </blockquote>
+            <footer class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">CD</div><!-- Change initials -->
+              <div>
+                <div class="testimonial-card__name">Person Full Name</div><!-- Change name -->
+                <div class="testimonial-card__role">Their Title or Role</div><!-- Change role -->
+              </div>
+            </footer>
+          </article>
+
+          <!-- TESTIMONIAL 3 -->
+          <article class="testimonial-card reveal reveal-delay-3">
+            <blockquote class="testimonial-card__quote">
+              Coming Soon!
+              Coming Soon!
+            </blockquote>
+            <footer class="testimonial-card__author">
+              <div class="testimonial-card__avatar" aria-hidden="true">EF</div><!-- Change initials -->
+              <div>
+                <div class="testimonial-card__name">Person Full Name</div><!-- Change name -->
+                <div class="testimonial-card__role">Their Title or Role</div><!-- Change role -->
+              </div>
+            </footer>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ════════════════════════════════════
+         CTA BANNER
+    ════════════════════════════════════ -->
+    <section class="section" aria-label="Call to action">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <div class="cta-banner__text">
+            <h2 class="cta-banner__title">Let's build<br />something great.</h2>
+            <p class="cta-banner__sub">Open to internships, projects, and collaborations.</p>
+          </div>
+          <a href="contact.html" class="btn btn--primary">Start a Conversation →</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="assets/images/logo-light.png" alt="DT Logo" class="footer__logo-img" width="40" height="40" />
+            <span class="footer__name">David Tulio</span>
+          </div>
+          <p class="footer__tagline">Turning ideas into functional and modern digital solutions.</p>
+          <p class="footer__email">
+            <a href="mailto:davidjohne.tulio@gmail.com">davidjohne.tulio@gmail.com</a>
+          </p>
+        </div>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 David John Emmanuel G. Tulio. All rights reserved.</p>
+        <div class="footer__social" aria-label="Social media links">
+          <a href="https://github.com/DavidTulio" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+          <a href="https://www.linkedin.com/in/david-john-tulio-126916316/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+          <!-- PLACEHOLDER: Add your Twitter/X link if you have one, otherwise delete this line -->
+          <a href="#" target="_blank" rel="noopener" aria-label="Twitter">𝕏</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/animations.js"></script>
+
+</body>
+</html>
