@@ -104,11 +104,30 @@
       btn.disabled = true;
       btn.textContent = 'Sending…';
 
-      // Simulate async submission (replace with real fetch to backend)
-      setTimeout(() => {
-        form.style.display = 'none';
-        if (success) success.classList.add('is-visible');
-      }, 1200);
+      // Send form data to Formspree — messages arrive in davidjohne.tulio@gmail.com
+      fetch('https://formspree.io/f/xdawwkyr', {
+        method:  'POST',
+        headers: { 'Accept': 'application/json' },
+        body:    new FormData(form)
+      })
+      .then(response => {
+        if (response.ok) {
+          // Success — hide form, show thank you message
+          form.style.display = 'none';
+          if (success) success.classList.add('is-visible');
+        } else {
+          // Server error
+          btn.disabled = false;
+          btn.textContent = 'Send Message →';
+          alert('Something went wrong. Please try again or email me directly at davidjohne.tulio@gmail.com');
+        }
+      })
+      .catch(() => {
+        // Network error
+        btn.disabled = false;
+        btn.textContent = 'Send Message →';
+        alert('Could not send message. Please check your connection or email me at davidjohne.tulio@gmail.com');
+      });
     });
   }
 

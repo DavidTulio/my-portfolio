@@ -258,9 +258,9 @@
                 actually makes a measurable difference in real-world projects.
               </p>
               <div class="blog-card__footer">
-                <a href="#" class="blog-card__read">
-                  Coming Soon →
-                </a>
+                <button class="blog-card__read blog-read-more" data-read-more="article-3">
+                  Read Article →
+                </button>
                 <span class="blog-card__time">5 min read</span>
               </div>
             </div>
@@ -325,6 +325,74 @@
           </div>
         </div>
 
+        <!-- Expanded Article 3 -->
+        <div id="article-3" class="article-view" style="display:none; margin-top: var(--space-10);" role="article">
+          <div class="article-view__header">
+            <div class="blog-featured__meta" style="margin-bottom: var(--space-5);">
+              <span class="tag">Performance</span>
+              <span class="blog-featured__date">October 15, 2024</span>
+              <span class="blog-card__time">5 min read</span>
+            </div>
+            <h2 style="font-size: var(--text-3xl);">
+              Web Performance in 2024: What Actually Moves the Needle
+            </h2>
+            <p style="margin-top: 1rem; color: var(--color-ink-3); font-size: var(--text-sm);">
+              By David John Emmanuel G. Tulio
+            </p>
+          </div>
+          <div class="article-view__body">
+
+            <h2>The Problem With Generic Performance Advice</h2>
+            <p>
+              Every web performance article tells you the same things — compress your images,
+              use a CDN, minify your CSS. That advice is not wrong, but it rarely tells you
+              which optimizations will actually make a visible difference to real users.
+              After working on several projects and studying Core Web Vitals, here is what
+              I have found genuinely moves the needle.
+            </p>
+
+            <h2>Core Web Vitals: Focus on LCP First</h2>
+            <p>
+              Google's Core Web Vitals — LCP, CLS, and INP — are now ranking signals.
+              Of the three, <strong>Largest Contentful Paint (LCP)</strong> has the most
+              direct impact on perceived load speed. LCP measures how long it takes for
+              the largest visible element (usually a hero image or heading) to render.
+              The single most effective fix is adding <code>fetchpriority="high"</code>
+              to your above-the-fold hero image. This tells the browser to load it before
+              anything else, often cutting LCP by 30–50%.
+            </p>
+
+            <h2>Lazy Loading Is Not a Silver Bullet</h2>
+            <p>
+              Adding <code>loading="lazy"</code> to every image is a common mistake.
+              Lazy loading delays images that are off-screen — but if you apply it to
+              images that are immediately visible, you are actually slowing down your
+              page. The rule is simple: only lazy load images that are below the fold.
+              The hero image and any image in the first viewport should never be lazy loaded.
+            </p>
+
+            <h2>What Actually Made the Biggest Difference in My Projects</h2>
+            <ul>
+              <li>Converting images from PNG/JPG to <strong>WebP</strong> — typically 25–35% smaller files with no visible quality loss</li>
+              <li>Adding <code>width</code> and <code>height</code> attributes to every image — prevents layout shift (CLS) as images load</li>
+              <li>Using <code>font-display: swap</code> on custom fonts — prevents invisible text while fonts load</li>
+              <li>Deferring non-critical JavaScript with <code>defer</code> or <code>async</code> — speeds up initial render</li>
+              <li>Removing unused CSS — tools like PurgeCSS can cut stylesheet size dramatically</li>
+            </ul>
+
+            <h2>The Honest Truth About Bundle Optimization</h2>
+            <p>
+              If you are building a plain HTML/CSS/JS site without a framework, bundle
+              optimization is largely irrelevant. The biggest wins come from the basics —
+              optimized images, deferred scripts, and efficient CSS. Complex build pipelines
+              are tools for solving complex problems. For simpler projects, keep it simple
+              and measure what actually matters with Lighthouse and PageSpeed Insights
+              before optimizing anything.
+            </p>
+
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -340,7 +408,7 @@
             <span class="footer__name">David Tulio</span>
           </div>
           <p class="footer__tagline">Turning ideas into functional and modern digital solutions.</p>
-          <p class="footer__email"><a href="mailto:davidjohne.tulio@gmail.com">davidjohntulio@email.com</a></p>
+          <p class="footer__email"><a href="mailto:davidjohne.tulio@gmail.com">davidjohne.tulio@gmail.com</a></p>
         </div>
         <nav class="footer__nav" aria-label="Footer navigation">
           <a href="index.html">Home</a>
