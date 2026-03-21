@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Projects — David John Emmanuel G. Tulio</title>
+  <meta name="description" content="Web development projects by David John Emmanuel G. Tulio — including Dropify and 4B Betis Furniture." />
+  <meta name="author" content="David John Emmanuel G. Tulio" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Projects — David John Emmanuel G. Tulio" />
+  <meta property="og:description" content="Showcasing real-world web development projects." />
+  <meta property="og:type" content="website" />
+
+  <!-- Theme pre-load -->
+  <script>
+    (function () {
+      var saved = localStorage.getItem('portfolio-theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', saved || (prefersDark ? 'dark' : 'light'));
+    })();
+  </script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/nav.css" />
+  <link rel="stylesheet" href="assets/css/footer.css" />
+  <link rel="stylesheet" href="assets/css/pages/projects.css" />
+</head>
+
+<body class="page-enter">
+
+  <!-- NAVIGATION -->
+  <header role="banner">
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="container navbar__inner">
+        <a href="index.html" class="navbar__logo" aria-label="David Tulio — Home">
+          <img src="assets/images/logo-light.png" alt="DT Logo" class="navbar__logo-img logo-img" width="38" height="38" />
+          <span class="navbar__logo-name">David Tulio<span>Web Developer</span></span>
+        </a>
+        <ul class="navbar__links" role="list">
+          <li><a href="index.html"    class="navbar__link">Home</a></li>
+          <li><a href="about.html"    class="navbar__link">About</a></li>
+          <li><a href="projects.html" class="navbar__link" aria-current="page">Projects</a></li>
+          <li><a href="blog.html"     class="navbar__link">Blog</a></li>
+          <li><a href="contact.html"  class="navbar__link">Contact</a></li>
+        </ul>
+        <div class="navbar__controls">
+          <button class="theme-toggle" data-theme-toggle aria-label="Toggle dark/light mode">
+            <span class="icon-moon" aria-hidden="true">☽</span>
+            <span class="icon-sun"  aria-hidden="true">☀</span>
+          </button>
+          <button class="navbar__hamburger" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-menu">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <nav id="mobile-menu" class="navbar__mobile-menu" aria-label="Mobile navigation">
+      <a href="index.html"    class="navbar__mobile-link">Home</a>
+      <a href="about.html"    class="navbar__mobile-link">About</a>
+      <a href="projects.html" class="navbar__mobile-link" aria-current="page">Projects</a>
+      <a href="blog.html"     class="navbar__mobile-link">Blog</a>
+      <a href="contact.html"  class="navbar__mobile-link">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ════════════════════════════════════
+         PROJECTS HERO
+    ════════════════════════════════════ -->
+    <section class="projects-hero" aria-label="Projects introduction">
+      <div class="container">
+        <p class="section-label">My Work</p>
+        <h1 class="projects-hero__title">
+          Built with<br /><em>passion</em><br />and purpose.
+        </h1>
+        <p class="projects-hero__sub" style="margin-top: 1.5rem;">
+          Real projects built during my studies and personal time,
+          showcasing my growth across the web development stack.
+        </p>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════
+         FILTER BAR
+    ════════════════════════════════════ -->
+    <div class="projects-filter" aria-label="Filter projects" role="toolbar">
+      <div class="container" style="display:flex; gap: var(--space-3); flex-wrap: wrap;">
+        <button class="filter-btn active" data-filter="all"  aria-pressed="true">All Projects</button>
+        <button class="filter-btn"        data-filter="web"  aria-pressed="false">Web Apps</button>
+        <button class="filter-btn"        data-filter="app"  aria-pressed="false">Applications</button>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════
+         PROJECTS LIST
+    ════════════════════════════════════ -->
+    <div class="projects-list" role="list">
+
+      <!-- ═══════════════════════════════════════════════════════
+           PROJECT 1: DROPIFY
+           EDIT: Update descriptions, links, and screenshots below
+      ═══════════════════════════════════════════════════════ -->
+      <article class="project-full reveal" data-category="web" role="listitem">
+        <div class="container project-full__inner">
+
+          <div class="project-full__info">
+            <p class="project-full__number">Project 01</p>
+
+            <!-- EDIT: Change project name if needed -->
+            <h2 class="project-full__title">Dropify</h2>
+
+            <div class="project-full__tags">
+              <!-- EDIT: Add/remove tech tags to match your actual stack -->
+              <span class="tag">Node.js</span>
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">MongoDB</span>
+              <span class="tag">Figma</span>
+            </div>
+
+            <!--
+            EDIT: Describe your project.
+            What does it do? Who is it for? What problem does it solve?
+            -->
+            <p class="project-full__desc">
+              Dropify is a web-based e-commerce platform developed for local influencers,
+              featuring a functional backend system. The platform includes structured
+              product pages and a user-friendly interface designed to streamline
+              online selling for content creators.
+            </p>
+
+            <div class="project-full__features">
+              <p class="project-full__features-title">Key Features</p>
+              <!--
+              EDIT: List the main features of this project.
+              Each <li> is one feature.
+              -->
+              <ul class="project-full__features-list">
+                <li>Web-based e-commerce platform for local influencers</li>
+                <li>Functional backend system with MongoDB</li>
+                <li>Structured product pages with clean UI</li>
+                <li>User-friendly interface layouts</li>
+                <!-- PLACEHOLDER: Add more features you built -->
+                <!--<li> e.g. Mobile-responsive design </li>-->
+              </ul>
+            </div>
+
+            <div class="project-full__links">
+              <a href="https://dropifystore.netlify.app/" class="btn btn--primary" target="_blank" rel="noopener">
+                ↗ Live Demo
+              </a>
+              <a href="https://github.com/jarenkendrick14/6WCSERVER-WD303-Dropify" class="btn btn--ghost" target="_blank" rel="noopener">
+                GitHub →
+              </a>
+              
+            </div>
+          </div>
+
+          <!--
+          EDIT: Screenshots
+          Right now these show placeholder boxes with labels.
+          To add real screenshots:
+            1. Put your image files in the assets/images/ folder
+            2. Replace the <div> below with:
+               <img src="assets/images/your-screenshot.png" alt="Description" class="project-full__screenshot" />
+          -->
+          <div class="project-full__visuals" aria-label="Dropify screenshots">
+            <div class="project-full__screenshot project-full__screenshot--wide project-full__screenshot--1">
+              <img src="assets/images/home-dropify.png" alt="Dropify - Home page screenshot" class="project-full__screenshot" />
+            </div>
+            <div class="project-full__screenshot project-full__screenshot--2">
+              <img src="assets/images/merch-dropify.PNG" alt="Dropify - Merchandise page screenshot" class="project-full__screenshot" />
+            </div>
+            <div class="project-full__screenshot project-full__screenshot--3">
+              <img src="assets/images/about-dropify.PNG" alt="Dropify - About page screenshot" class="project-full__screenshot" />
+            </div>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- ═══════════════════════════════════════════════════════
+           PROJECT 2: 4B BETIS FURNITURE
+           EDIT: Update descriptions, links, and screenshots below
+      ═══════════════════════════════════════════════════════ -->
+      <article class="project-full reveal section--alt" data-category="web" role="listitem">
+        <div class="container project-full__inner">
+
+          <div class="project-full__info">
+            <p class="project-full__number">Project 02</p>
+
+            <!-- EDIT: Change project name if needed -->
+            <h2 class="project-full__title">4B Betis Furniture</h2>
+
+            <div class="project-full__tags">
+              <!-- EDIT: Match your actual tech stack -->
+              <span class="tag">Figma</span>
+              <span class="tag">WordPress</span>
+            </div>
+
+            <!--
+            EDIT: Describe this project.
+            -->
+            <p class="project-full__desc">
+              A professional marketing website created for a local furniture shop —
+              4B Betis Furniture. The site showcases their services and product
+              offerings with clear, structured layouts designed to highlight the
+              brand's identity and make it easy for customers to explore their range.
+            </p>
+
+            <div class="project-full__features">
+              <p class="project-full__features-title">Key Features</p>
+              <!--
+              EDIT: List the main features of this project.
+              -->
+              <ul class="project-full__features-list">
+                <li>Marketing website for a local furniture business</li>
+                <li>Designed in Figma before development</li>
+                <li>Built and deployed using WordPress CMS</li>
+                <li>Clear layouts to highlight brand identity and products</li>
+                <!-- PLACEHOLDER: Add more features -->
+                <!--<li> e.g. Mobile-responsive design </li>-->
+              </ul>
+            </div>
+
+            <div class="project-full__links">
+              <a href="https://4bbetisfurniture.com" class="btn btn--primary" target="_blank" rel="noopener">
+                ↗ Live Site
+              </a>
+              <!-- No GitHub — this project was built with WordPress, no source code repo -->
+            </div>
+          </div>
+
+          <div class="project-full__visuals" aria-label="4B Betis Furniture screenshots">
+            <div class="project-full__screenshot project-full__screenshot--wide project-full__screenshot--4">
+              <img src="assets/images/4b-home.PNG" alt="4B Betis Furniture - Home page screenshot" class="project-full__screenshot" />
+            </div>
+            <div class="project-full__screenshot project-full__screenshot--5">
+              <img src="assets/images/4b-store.PNG" alt="4B Betis Furniture - Store page screenshot" class="project-full__screenshot" />
+            </div>
+            <div class="project-full__screenshot project-full__screenshot--6">
+              <img src="assets/images/4b-about.PNG" alt="4B Betis Furniture - About page screenshot" class="project-full__screenshot" />
+            </div>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- ═══════════════════════════════════════════════════════
+           PROJECT 3: Focusflow
+           Copy this entire <article> block to add more projects.
+           Change data-category="web" to "app" or "api" if needed.
+      ═══════════════════════════════════════════════════════ -->
+      <article class="project-full reveal" data-category="web" role="listitem">
+        <div class="container project-full__inner">
+
+          <div class="project-full__info">
+            <p class="project-full__number">Project 03</p>
+
+            <!-- PLACEHOLDER: Replace with your project name -->
+            <h2 class="project-full__title">FocusFlow</h2>
+
+            <div class="project-full__tags">
+              <!-- PLACEHOLDER: Add your tech tags once project is ready -->
+              <span class="tag">Html</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Javascript</span>
+              <span class="tag">Web Audio API</span>
+              <span class="tag">localStorage</span>
+            </div>
+
+            <!-- PLACEHOLDER: Replace with your project description -->
+            <p class="project-full__desc">
+              FocusFlow is a Pomodoro-based study timer designed to help students manage their focus sessions effectively. Built with pure HTML, CSS, and JavaScript, it features a circular progress ring, task list, session history, daily stats tracking, and a Web Audio API chime — all without any frameworks or external dependencies. Data persists locally so nothing is lost on refresh.
+            </p>
+
+            <div class="project-full__features">
+              <p class="project-full__features-title">Key Features</p>
+              <ul class="project-full__features-list">
+                <li>Pomodoro timer with Focus / Short Break / Long Break modes</li>
+                <li>Animated SVG progress ring</li>
+                <li>Task list with completion tracking</li>
+                <li>Daily session history and stats</li>
+                <li>Sound alert via Web Audio API (no audio files needed)</li>
+                <li>Dark / Light mode with persistent preferences</li>
+                <li>Fully responsive, no frameworks used</li>
+              </ul>
+            </div>
+
+            <div class="project-full__links">
+              <a href="https://pmdr-focusflow.netlify.app" class="btn btn--primary" target="_blank" rel="noopener">↗ Live Demo</a>
+              <a href="https://github.com/DavidTulio/focusflow" class="btn btn--ghost" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+
+            <!--
+            PLACEHOLDER: When your project is ready, replace this comment with:
+
+            <div class="project-full__features">
+              <p class="project-full__features-title">Key Features</p>
+              <ul class="project-full__features-list">
+                <li>Feature one</li>
+                <li>Feature two</li>
+                <li>Feature three</li>
+              </ul>
+            </div>
+
+            <div class="project-full__links">
+              <a href="https://your-live-demo.com" class="btn btn--primary" target="_blank" rel="noopener">↗ Live Demo</a>
+              <a href="https://github.com/DavidTulio/your-repo" class="btn btn--ghost" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+            -->
+          </div>
+
+          <!-- <div class="project-full__visuals" aria-label="Project screenshots placeholder">
+            
+            PLACEHOLDER: Add real screenshots once your project is ready.
+            Put image files in assets/images/ then replace these divs with:
+            <img src="assets/images/your-screenshot.png" alt="Description" class="project-full__screenshot project-full__screenshot--wide" />
+            
+            <div class="project-full__screenshot project-full__screenshot--wide project-full__screenshot--1">Coming Soon</div>
+            <div class="project-full__screenshot project-full__screenshot--2">Coming Soon</div>
+            <div class="project-full__screenshot project-full__screenshot--3">Coming Soon</div>
+          </div> -->
+
+          <div class="project-full__visuals" aria-label="FocusFlow screenshots">
+            <div class="project-full__screenshot project-full__screenshot--wide project-full__screenshot--1">
+              <img src="assets/images/Focusflow1.png" alt="FocusFlow - Home page screenshot" class="project-full__screenshot" />
+            </div>
+            <div class="project-full__screenshot project-full__screenshot--2">
+              <img src="assets/images/Focusflow2.png" alt="FocusFlow - Custom time section screenshot" class="project-full__screenshot" />
+            </div>
+            <div class="project-full__screenshot project-full__screenshot--3">
+              <img src="assets/images/Focusflow3.png" alt="FocusFlow - Light mode section screenshot" class="project-full__screenshot" />
+            </div>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- ═══════════════════════════════════════════════════════
+           PROJECT 4: AllowanceIQ
+           Copy this entire <article> block to add more projects.
+           Change data-category="web" to "app" or "api" if needed.
+      ═══════════════════════════════════════════════════════ -->
+      <article class="project-full reveal" data-category="web" role="listitem">
+        <div class="container project-full__inner">
+
+          <div class="project-full__info">
+            <p class="project-full__number">Project 04</p>
+
+            <!-- PLACEHOLDER: Replace with your project name -->
+            <h2 class="project-full__title">AllowanceIQ</h2>
+
+            <div class="project-full__tags">
+              <!-- PLACEHOLDER: Add your tech tags once project is ready -->
+              <span class="tag">Html</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Javascript</span>
+              <span class="tag">localStorage</span>
+            </div>
+
+            <!-- PLACEHOLDER: Replace with your project description -->
+            <p class="project-full__desc">
+              AllowanceIQ helps students manage their weekly allowance by logging daily expenses under four categories — Food, Transport, School, and Others. The app tracks remaining balance in real time, displays a budget progress bar that turns orange at 80% and red when over budget, and shows a category breakdown so students know exactly where their money is going. A weekly summary displays total spent, average daily spending, and the top spending category. All data persists in localStorage and automatically archives the previous week every Monday.
+            </p>
+
+            <div class="project-full__features">
+              <p class="project-full__features-title">Key Features</p>
+              <ul class="project-full__features-list">
+                <li>Weekly allowance setup with quick-amount presets (₱300 – ₱1,500)</li>
+                <li>Real-time remaining balance with color-coded status</li>
+                <li>Budget progress bar — turns orange at 80%, red at 100%</li>
+                <li>Expense logger with 4 categories — Food, Transport, School, Others</li>
+                <li>Category breakdown with individual mini progress bars</li>
+                <li>Weekly summary — total spent, average per day, top category</li>
+                <li>Auto-archives previous week's data every Monday</li>
+                <li>Dark mode by default with light mode toggle</li>
+                <li>Fully responsive for mobile and desktop</li>
+              </ul>
+            </div>
+
+            <div class="project-full__links">
+              <a href="https://allowanceiq.netlify.app" class="btn btn--primary" target="_blank" rel="noopener">↗ Live Demo</a>
+              <a href="https://github.com/DavidTulio/allowance_tracker" class="btn btn--ghost" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+
+            <!--
+            PLACEHOLDER: When your project is ready, replace this comment with:
+
+            <div class="project-full__features">
+              <p class="project-full__features-title">Key Features</p>
+              <ul class="project-full__features-list">
+                <li>Feature one</li>
+                <li>Feature two</li>
+                <li>Feature three</li>
+              </ul>
+            </div>
+
+            <div class="project-full__links">
+              <a href="https://your-live-demo.com" class="btn btn--primary" target="_blank" rel="noopener">↗ Live Demo</a>
+              <a href="https://github.com/DavidTulio/your-repo" class="btn btn--ghost" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+            -->
+          </div>
+
+          <!-- <div class="project-full__visuals" aria-label="Project screenshots placeholder">
+            
+            PLACEHOLDER: Add real screenshots once your project is ready.
+            Put image files in assets/images/ then replace these divs with:
+            <img src="assets/images/your-screenshot.png" alt="Description" class="project-full__screenshot project-full__screenshot--wide" />
+            
+            <div class="project-full__screenshot project-full__screenshot--wide project-full__screenshot--1">Coming Soon</div>
+            <div class="project-full__screenshot project-full__screenshot--2">Coming Soon</div>
+            <div class="project-full__screenshot project-full__screenshot--3">Coming Soon</div>
+          </div> -->
+
+          <div class="project-full__visuals" aria-label="AllowanceIQ screenshots">
+            <div class="project-full__screenshot project-full__screenshot--wide project-full__screenshot--4">
+              <img src="assets/images/AllowanceIQ1.png" alt="AllowanceIQ - Set Allowance screenshot" class="project-full__screenshot" />
+            </div>
+            <div class="project-full__screenshot project-full__screenshot--5">
+              <img src="assets/images/AllowanceIQ2.png" alt="AllowanceIQ - Dashboard screenshot" class="project-full__screenshot" />
+            </div>
+            <div class="project-full__screenshot project-full__screenshot--6">
+              <img src="assets/images/AllowanceIQ3.png" alt="AllowanceIQ - Delete screenshot" class="project-full__screenshot" />
+            </div>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- ═══════════════════════════════════════════════════════
+           PROJECT 5: VitalCheck
+           Copy this entire <article> block to add more projects.
+           Change data-category="web" to "app" or "api" if needed.
+      ═══════════════════════════════════════════════════════ -->
+      <article class="project-full reveal" data-category="web" role="listitem">
+        <div class="container project-full__inner">
+
+          <div class="project-full__info">
+            <p class="project-full__number">Project 05</p>
+
+            <!-- PLACEHOLDER: Replace with your project name -->
+            <h2 class="project-full__title">VitalCheck</h2>
+
+            <div class="project-full__tags">
+              <!-- PLACEHOLDER: Add your tech tags once project is ready -->
+              <span class="tag">Html</span>
+              <span class="tag">CSS</span>
+              <span class="tag">Javascript</span>
+              <span class="tag">localStorage</span>
+            </div>
+
+            <!-- PLACEHOLDER: Replace with your project description -->
+            <p class="project-full__desc">
+              VitalCheck calculates your Body Mass Index based on height, weight, age, and gender — supporting both metric and imperial units. Results are displayed on an animated color-coded gauge that moves a needle to your exact BMI position, with the result card changing color based on your category. The app covers all six WHO classifications, shows your ideal healthy weight range, and provides four personalized health tips per category. Past results can be saved and tracked in a history log that persists across sessions.
+            </p>
+
+            <div class="project-full__features">
+              <p class="project-full__features-title">Key Features</p>
+              <ul class="project-full__features-list">
+                <li>BMI calculator with metric (kg/cm) and imperial (lbs/ft) unit support</li>
+                <li>Animated BMI gauge with color-coded needle</li>
+                <li>6 WHO BMI classifications — Underweight to Obese Class III</li>
+                <li>Dynamic result card that changes color per category</li>
+                <li>Healthy weight range based on your height</li>
+                <li>4 personalized health tips per BMI category</li>
+                <li>BMI reference table with your current category highlighted</li>
+                <li>History tracking — save and review past results</li>
+                <li>Dark / Light mode with saved preference</li>
+                <li>Fully responsive for mobile and desktop</li>
+              </ul>
+            </div>
+
+            <div class="project-full__links">
+              <a href="https://bmi-vitalcheck.netlify.app" class="btn btn--primary" target="_blank" rel="noopener">↗ Live Demo</a>
+              <a href="https://github.com/DavidTulio/vitalcheck" class="btn btn--ghost" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+
+            <!--
+            PLACEHOLDER: When your project is ready, replace this comment with:
+
+            <div class="project-full__features">
+              <p class="project-full__features-title">Key Features</p>
+              <ul class="project-full__features-list">
+                <li>Feature one</li>
+                <li>Feature two</li>
+                <li>Feature three</li>
+              </ul>
+            </div>
+
+            <div class="project-full__links">
+              <a href="https://your-live-demo.com" class="btn btn--primary" target="_blank" rel="noopener">↗ Live Demo</a>
+              <a href="https://github.com/DavidTulio/your-repo" class="btn btn--ghost" target="_blank" rel="noopener">GitHub →</a>
+            </div>
+            -->
+          </div>
+
+          <!-- <div class="project-full__visuals" aria-label="Project screenshots placeholder">
+            
+            PLACEHOLDER: Add real screenshots once your project is ready.
+            Put image files in assets/images/ then replace these divs with:
+            <img src="assets/images/your-screenshot.png" alt="Description" class="project-full__screenshot project-full__screenshot--wide" />
+            
+            <div class="project-full__screenshot project-full__screenshot--wide project-full__screenshot--1">Coming Soon</div>
+            <div class="project-full__screenshot project-full__screenshot--2">Coming Soon</div>
+            <div class="project-full__screenshot project-full__screenshot--3">Coming Soon</div>
+          </div> -->
+
+          <div class="project-full__visuals" aria-label="VitalCheck screenshots">
+            <div class="project-full__screenshot project-full__screenshot--wide project-full__screenshot--4">
+              <img src="assets/images/vitalcheck1.png" alt="VitalCheck - Home screenshot" class="project-full__screenshot" />
+            </div>
+            <div class="project-full__screenshot project-full__screenshot--5">
+              <img src="assets/images/vitalcheck2.png" alt="VitalCheck - Results screenshot" class="project-full__screenshot" />
+            </div>
+            <div class="project-full__screenshot project-full__screenshot--6">
+              <img src="assets/images/vitalcheck3.png" alt="VitalCheck - Results screenshot" class="project-full__screenshot" />
+            </div>
+          </div>
+
+        </div>
+      </article>
+
+    </div><!-- /projects-list -->
+
+    <!-- ════════════════════════════════════
+         TECH STACK SECTION
+    ════════════════════════════════════ -->
+    <section class="stack-section section" aria-labelledby="stack-heading">
+      <div class="container">
+        <p class="section-label reveal">Full Toolkit</p>
+        <h2 class="section-title reveal" id="stack-heading">My Stack.</h2>
+
+        <!--
+        EDIT: Add/remove stack items below.
+        Each item has an emoji icon and a name label.
+        -->
+        <div class="stack-grid">
+          <div class="stack-item reveal"><span class="stack-item__icon" aria-hidden="true">⟨/⟩</span><span class="stack-item__name">HTML5</span></div>
+          <div class="stack-item reveal reveal-delay-1"><span class="stack-item__icon" aria-hidden="true">#</span><span class="stack-item__name">CSS3</span></div>
+          <div class="stack-item reveal reveal-delay-1"><span class="stack-item__icon" aria-hidden="true">JS</span><span class="stack-item__name">JavaScript</span></div>
+          <div class="stack-item reveal reveal-delay-2"><span class="stack-item__icon" aria-hidden="true">🟢</span><span class="stack-item__name">Vue.js</span></div>
+          <div class="stack-item reveal reveal-delay-2"><span class="stack-item__icon" aria-hidden="true">🐘</span><span class="stack-item__name">Basic PHP</span></div>
+          <div class="stack-item reveal reveal-delay-3"><span class="stack-item__icon" aria-hidden="true">⬡</span><span class="stack-item__name">Node.js</span></div>
+          <div class="stack-item reveal reveal-delay-3"><span class="stack-item__icon" aria-hidden="true">🌿</span><span class="stack-item__name">MongoDB</span></div>
+          <div class="stack-item reveal reveal-delay-4"><span class="stack-item__icon" aria-hidden="true">🗄</span><span class="stack-item__name">MySQL</span></div>
+          <div class="stack-item reveal reveal-delay-4"><span class="stack-item__icon" aria-hidden="true">🐙</span><span class="stack-item__name">GitHub</span></div>
+          <div class="stack-item reveal reveal-delay-5"><span class="stack-item__icon" aria-hidden="true">🔷</span><span class="stack-item__name">Figma</span></div>
+          <div class="stack-item reveal reveal-delay-5"><span class="stack-item__icon" aria-hidden="true">🅦</span><span class="stack-item__name">WordPress</span></div>
+          <div class="stack-item reveal reveal-delay-5"><span class="stack-item__icon" aria-hidden="true">📱</span><span class="stack-item__name">Flutter</span></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="assets/images/logo-light.png" alt="DT Logo" class="footer__logo-img" width="40" height="40" />
+            <span class="footer__name">David Tulio</span>
+          </div>
+          <p class="footer__tagline">Turning ideas into functional and modern digital solutions.</p>
+          <p class="footer__email"><a href="mailto:davidjohne.tulio@gmail.com">davidjohne.tulio@gmail.com</a></p>
+        </div>
+        <nav class="footer__nav" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="projects.html">Projects</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; 2025 David John Emmanuel G. Tulio. All rights reserved.</p>
+        <div class="footer__social" aria-label="Social media links">
+          <a href="https://github.com/DavidTulio" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
+          <a href="https://www.linkedin.com/in/david-john-tulio-126916316/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/theme.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/animations.js"></script>
+
+  <!-- AI Chatbot Assistant -->
+  <script src="assets/js/chatbot.js"></script>
+
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/69be99bbcfaccd1c35825245/1jk88h1dn';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+
+</body>
+</html>
