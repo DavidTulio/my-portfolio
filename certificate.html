@@ -24,6 +24,19 @@
   <link rel="stylesheet" href="assets/css/nav.css" />
   <link rel="stylesheet" href="assets/css/footer.css" />
   <link rel="stylesheet" href="assets/css/pages/certificate.css" />
+
+  <!-- Force Tawk.to to float properly -->
+  <style>
+    #tawkchat-container,
+    .tawk-min-container,
+    .tawk-button-container,
+    iframe[id^="tawk"] {
+      position: fixed !important;
+      bottom: 1.5rem !important;
+      right: 1.5rem !important;
+      z-index: 9998 !important;
+    }
+  </style>
 </head>
 
 <body class="page-enter">

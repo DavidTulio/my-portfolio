@@ -28,7 +28,7 @@
      Update SYSTEM_PROMPT whenever you add new projects,
      skills, or certifications to keep the AI up to date.
   ---------------------------------------------------------- */
-  const GEMINI_API_KEY  = 'AIzaSyBN5KMi08jZOjGVDHmbIpEjqsNbzKGtz-k';
+  const GEMINI_API_KEY  = 'AIzaSyDa8tc2orH7IjscPe6ge6t_5FevF3xpnpM';
   const GEMINI_MODEL    = 'gemini-2.0-flash';
   const CHAT_TITLE      = 'Ask About David';
   const WELCOME_MESSAGE = "Hi! I'm David's AI assistant. Ask me anything about his skills, projects, experience, or how to get in touch!";
